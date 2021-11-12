@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import CardList from "./CardList";
 import SearchBox from "./SearchBox";
+import Scroll from "./Scroll";
 import './App.css';
 
 class App extends Component {
@@ -31,8 +32,10 @@ class App extends Component {
     return (
       <div className="tc">
         <h1>MURRR</h1>
-        <SearchBox searchField={this.state.searchField} searchChange={this.onSearchChange}/>
-        <CardList cats={filteredCats}/>
+        <Scroll>
+          <SearchBox searchField={this.state.searchField} searchChange={this.onSearchChange}/>
+          <CardList cats={filteredCats}/>
+        </Scroll>
       </div>
     )
   }
