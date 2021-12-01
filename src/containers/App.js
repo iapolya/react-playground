@@ -5,24 +5,25 @@ import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
 import './App.css';
 
-import {setSearchField} from "../actions";
+import {requestRobots, setSearchField} from "../actions";
 
-const mapStateToProps = state => ({...state})
+const mapStateToProps = state => ({
+  searchField: state.searchCats.searchField,
+  cats: state.requestCats.cats,
+  isPending: state.requestCats.isPending,
+  error: state.requestCats.error
+})
 
 const mapDispatchToProps = dispatch => ({
-  onSearchChange: (event) => dispatch(setSearchField(event.target.value))
+  onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+  onRequestCats: () => dispatch(requestRobots())
 })
 
 const App = (props) => {
-  const [cats, setCats] = useState([]);
-  const {searchField, onSearchChange} = props;
+  const {searchField, onSearchChange, cats, isPending} = props;
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(users => {
-        setCats(users);
-      })
+    props.onRequestCats();
   }, [])
 
 
@@ -30,7 +31,7 @@ const App = (props) => {
     return cat.name.toLowerCase().includes(searchField.toLowerCase())
   })
 
-  return !cats.length ? <h1>Loading</h1> : (
+  return isPending ? <h1>Loading</h1> : (
     <div className="tc">
       <h1>MURRR</h1>
       <Scroll>
