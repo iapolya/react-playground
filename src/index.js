@@ -8,17 +8,16 @@ import 'tachyons';
 import App from './containers/App';
 import { searchCats, requestCats } from './reducers';
 import thunkMiddleware from 'redux-thunk';
-import { createLogger } from 'redux-logger';
-
-const logger = createLogger();
 
 const rootReducer = combineReducers({ searchCats, requestCats });
-const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, logger));
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

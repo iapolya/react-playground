@@ -6,6 +6,7 @@ import Scroll from '../components/Scroll';
 import './App.css';
 
 import { requestRobots, setSearchField } from '../actions';
+import { Header } from '../components/Header';
 
 const mapStateToProps = (state) => ({
   searchField: state.searchCats.searchField,
@@ -34,7 +35,7 @@ const App = (props) => {
     <h1>Loading</h1>
   ) : (
     <div className="tc">
-      <h1>MURRR</h1>
+      <Header />
       <Scroll>
         <SearchBox searchField={searchField} searchChange={onSearchChange} />
         <CardList cats={filteredCats} />
