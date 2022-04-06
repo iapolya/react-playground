@@ -2,7 +2,7 @@
   "name": "react-playground",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://iapolya.github.io/mur",
+  "homepage": "https://iapolya.github.io/react-playground/",
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
