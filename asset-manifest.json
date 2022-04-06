@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/mur/static/css/main.9ef283f9.chunk.css",
-    "main.js": "/mur/static/js/main.5474b07d.chunk.js",
-    "main.js.map": "/mur/static/js/main.5474b07d.chunk.js.map",
-    "runtime-main.js": "/mur/static/js/runtime-main.2cf35e69.js",
-    "runtime-main.js.map": "/mur/static/js/runtime-main.2cf35e69.js.map",
-    "static/css/2.31461e4f.chunk.css": "/mur/static/css/2.31461e4f.chunk.css",
-    "static/js/2.2bca5645.chunk.js": "/mur/static/js/2.2bca5645.chunk.js",
-    "static/js/2.2bca5645.chunk.js.map": "/mur/static/js/2.2bca5645.chunk.js.map",
-    "static/js/3.ba224c9a.chunk.js": "/mur/static/js/3.ba224c9a.chunk.js",
-    "static/js/3.ba224c9a.chunk.js.map": "/mur/static/js/3.ba224c9a.chunk.js.map",
-    "index.html": "/mur/index.html",
-    "service-worker.js": "/mur/service-worker.js",
-    "service-worker.js.map": "/mur/service-worker.js.map",
-    "static/css/2.31461e4f.chunk.css.map": "/mur/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.9ef283f9.chunk.css.map": "/mur/static/css/main.9ef283f9.chunk.css.map",
-    "static/js/2.2bca5645.chunk.js.LICENSE.txt": "/mur/static/js/2.2bca5645.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/mur/static/media/SEGA.47b4bfa9.woff"
+    "main.css": "/react-playground/static/css/main.a0dd4336.chunk.css",
+    "main.js": "/react-playground/static/js/main.b709454c.chunk.js",
+    "main.js.map": "/react-playground/static/js/main.b709454c.chunk.js.map",
+    "runtime-main.js": "/react-playground/static/js/runtime-main.2e1fdfe8.js",
+    "runtime-main.js.map": "/react-playground/static/js/runtime-main.2e1fdfe8.js.map",
+    "static/css/2.31461e4f.chunk.css": "/react-playground/static/css/2.31461e4f.chunk.css",
+    "static/js/2.2bca5645.chunk.js": "/react-playground/static/js/2.2bca5645.chunk.js",
+    "static/js/2.2bca5645.chunk.js.map": "/react-playground/static/js/2.2bca5645.chunk.js.map",
+    "static/js/3.ba224c9a.chunk.js": "/react-playground/static/js/3.ba224c9a.chunk.js",
+    "static/js/3.ba224c9a.chunk.js.map": "/react-playground/static/js/3.ba224c9a.chunk.js.map",
+    "index.html": "/react-playground/index.html",
+    "service-worker.js": "/react-playground/service-worker.js",
+    "service-worker.js.map": "/react-playground/service-worker.js.map",
+    "static/css/2.31461e4f.chunk.css.map": "/react-playground/static/css/2.31461e4f.chunk.css.map",
+    "static/css/main.a0dd4336.chunk.css.map": "/react-playground/static/css/main.a0dd4336.chunk.css.map",
+    "static/js/2.2bca5645.chunk.js.LICENSE.txt": "/react-playground/static/js/2.2bca5645.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/react-playground/static/media/SEGA.47b4bfa9.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.2cf35e69.js",
+    "static/js/runtime-main.2e1fdfe8.js",
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.2bca5645.chunk.js",
-    "static/css/main.9ef283f9.chunk.css",
-    "static/js/main.5474b07d.chunk.js"
+    "static/css/main.a0dd4336.chunk.css",
+    "static/js/main.b709454c.chunk.js"
   ]
 }
