@@ -1,6 +1,6 @@
 # My personal react playground 💪
 
-💅 There id no perfect code, okay?
+💅 There is no perfect code, okay?
 
 ## Checklist of topics
 ✅ react hooks
