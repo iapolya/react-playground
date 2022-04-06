@@ -3,11 +3,11 @@ import Card from './Card';
 
 const CardList = ({ cats }) => {
   return (
-    <div>
+    <section>
       {cats.map((cat, i) => {
         return <Card key={i} id={cat.id} name={cat.name} email={cat.email} />;
       })}
-    </div>
+    </section>
   );
 };
 
