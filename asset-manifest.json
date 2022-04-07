@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-playground/static/css/main.a0dd4336.chunk.css",
-    "main.js": "/react-playground/static/js/main.b709454c.chunk.js",
-    "main.js.map": "/react-playground/static/js/main.b709454c.chunk.js.map",
+    "main.css": "/react-playground/static/css/main.c40b2c0a.chunk.css",
+    "main.js": "/react-playground/static/js/main.c0efbf56.chunk.js",
+    "main.js.map": "/react-playground/static/js/main.c0efbf56.chunk.js.map",
     "runtime-main.js": "/react-playground/static/js/runtime-main.2e1fdfe8.js",
     "runtime-main.js.map": "/react-playground/static/js/runtime-main.2e1fdfe8.js.map",
     "static/css/2.31461e4f.chunk.css": "/react-playground/static/css/2.31461e4f.chunk.css",
@@ -14,7 +14,7 @@
     "service-worker.js": "/react-playground/service-worker.js",
     "service-worker.js.map": "/react-playground/service-worker.js.map",
     "static/css/2.31461e4f.chunk.css.map": "/react-playground/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.a0dd4336.chunk.css.map": "/react-playground/static/css/main.a0dd4336.chunk.css.map",
+    "static/css/main.c40b2c0a.chunk.css.map": "/react-playground/static/css/main.c40b2c0a.chunk.css.map",
     "static/js/2.2bca5645.chunk.js.LICENSE.txt": "/react-playground/static/js/2.2bca5645.chunk.js.LICENSE.txt",
     "static/media/App.css": "/react-playground/static/media/SEGA.47b4bfa9.woff"
   },
@@ -22,7 +22,7 @@
     "static/js/runtime-main.2e1fdfe8.js",
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.2bca5645.chunk.js",
-    "static/css/main.a0dd4336.chunk.css",
-    "static/js/main.b709454c.chunk.js"
+    "static/css/main.c40b2c0a.chunk.css",
+    "static/js/main.c0efbf56.chunk.js"
   ]
 }
