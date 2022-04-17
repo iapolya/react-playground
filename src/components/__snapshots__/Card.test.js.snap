@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render card component 1`] = `
+<div
+  className="bg-light-pink dib br3 pa3 ma2 grow pointer shadow-2"
+>
+  <img
+    alt="cat"
+    src="https://robohash.org/undefined?set=set4&size=50x50"
+    srcSet="https://robohash.org/undefined?set=set4&size=50x50 300w, https://robohash.org/undefined?set=set4&size=100x100 768w, https://robohash.org/undefined?set=set4&size=150x150 1280w"
+  />
+  <div>
+    <h2 />
+    <p />
+  </div>
+</div>
+`;
