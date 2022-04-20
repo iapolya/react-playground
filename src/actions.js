@@ -10,7 +10,7 @@ export const setSearchField = (text) => ({
   payload: text
 });
 
-export const requestRobots = () => (dispatch) => {
+export const requestCats = () => (dispatch) => {
   dispatch({ type: REQUEST_CATS_PENDING });
   fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())

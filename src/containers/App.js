@@ -1,12 +1,7 @@
-import React, { useEffect } from 'react';
-import { connect } from 'react-redux';
-import CardList from '../components/CardList';
-import SearchBox from '../components/SearchBox';
-import Scroll from '../components/Scroll';
 import './App.css';
-
-import { requestRobots, setSearchField } from '../actions';
-import { Header } from '../components/Header';
+import { requestCats, setSearchField } from '../actions';
+import MainPage from '../components/MainPage';
+import { connect } from 'react-redux';
 
 const mapStateToProps = (state) => ({
   searchField: state.searchCats.searchField,
@@ -17,31 +12,11 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
-  onRequestCats: () => dispatch(requestRobots())
+  onRequestCats: () => dispatch(requestCats())
 });
 
 const App = (props) => {
-  const { searchField, onSearchChange, cats, isPending } = props;
-
-  useEffect(() => {
-    props.onRequestCats();
-  }, []);
-
-  let filteredCats = cats.filter((cat) => {
-    return cat.name.toLowerCase().includes(searchField.toLowerCase());
-  });
-
-  return isPending ? (
-    <h1>Loading</h1>
-  ) : (
-    <div className="tc">
-      <Header />
-      <Scroll>
-        <SearchBox searchField={searchField} searchChange={onSearchChange} />
-        <CardList cats={filteredCats} />
-      </Scroll>
-    </div>
-  );
+  return <MainPage {...props} />;
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

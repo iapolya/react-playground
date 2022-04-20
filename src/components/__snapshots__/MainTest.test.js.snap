@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render app 1`] = `
+<div
+  className="tc"
+>
+  <Header />
+  <Scroll>
+    <SearchBox
+      searchChange={[MockFunction]}
+      searchField=""
+    />
+    <CardList
+      cats={Array []}
+    />
+  </Scroll>
+</div>
+`;

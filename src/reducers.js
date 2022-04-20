@@ -5,7 +5,7 @@ import {
   REQUEST_CATS_SUCCESS
 } from './constants';
 
-const initialStateSearch = {
+export const initialStateSearch = {
   searchField: ''
 };
 
@@ -18,7 +18,7 @@ export const searchCats = (state = initialStateSearch, action = {}) => {
   }
 };
 
-const initialStateCats = {
+export const initialStateCats = {
   isPending: false,
   error: null,
   cats: []
