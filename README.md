@@ -11,6 +11,8 @@
 
 ✅ convert to PWA
 
+✅ enzyme
+
 ## Available Scripts
 
 ```zsh
