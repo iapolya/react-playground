@@ -1,20 +1,27 @@
-import React, { useEffect } from 'react';
-import CardList from '../components/CardList';
-import SearchBox from '../components/SearchBox';
-import Scroll from '../components/Scroll';
+import React, { useEffect, ChangeEventHandler } from 'react';
+import CardList from './CardList';
+import SearchBox from './SearchBox';
+import Scroll from './Scroll';
 import '../containers/App.css';
 
 import { Header } from './Header';
+import { ICat, ISearch } from "../types";
 
-const MainPage = (props) => {
+export interface IMainProps extends ISearch {
+  cats: Array<ICat>,
+  isPending: Boolean,
+  onRequestCats: Function
+}
+
+const MainPage = (props: IMainProps) => {
   const { searchField, onSearchChange, cats, isPending } = props;
 
   useEffect(() => {
     props.onRequestCats();
   }, []);
 
-  let filteredCats = (cats) =>
-    cats.filter((cat) => {
+  let filteredCats = (cats: Array<ICat>) =>
+    cats.filter((cat: ICat) => {
       return cat.name.toLowerCase().includes(searchField.toLowerCase());
     });
 

@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { ChangeEventHandler } from 'react';
 
-const SearchBox = ({ searchField, searchChange }) => {
+type Props = {
+  searchField: string;
+  searchChange: ChangeEventHandler<HTMLInputElement>;
+};
+
+const SearchBox = ({ searchField, searchChange }: Props) => {
   return (
     <div className="pa2">
       <input

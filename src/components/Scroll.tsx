@@ -1,6 +1,10 @@
 import React from 'react';
 
-const Scroll = (props) => {
+interface IScrollProps {
+  children: React.ReactNode;
+}
+
+const Scroll = (props: IScrollProps) => {
   return <div style={{ overflowY: 'scroll', border: '1px solid grey' }}>{props.children}</div>;
 };
 

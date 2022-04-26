@@ -4,12 +4,22 @@ import {
   REQUEST_CATS_FAILED,
   REQUEST_CATS_SUCCESS
 } from './constants';
+import { ICat } from './types';
+
+export interface Action {
+  type: string;
+  payload: string;
+}
+
+export interface ISearchState {
+  searchField: string;
+}
 
 export const initialStateSearch = {
   searchField: ''
 };
 
-export const searchCats = (state = initialStateSearch, action = {}) => {
+export const searchCats = (state = initialStateSearch, action: Action) => {
   switch (action.type) {
     case CHANGE_SEARCH_FIELD:
       return { ...state, searchField: action.payload };
@@ -18,13 +28,19 @@ export const searchCats = (state = initialStateSearch, action = {}) => {
   }
 };
 
+export interface ICatsState {
+  isPending: boolean;
+  error: null | string;
+  cats: Array<ICat>;
+}
+
 export const initialStateCats = {
   isPending: false,
   error: null,
   cats: []
 };
 
-export const requestCats = (state = initialStateCats, action = {}) => {
+export const requestCats = (state = initialStateCats, action: Action) => {
   switch (action.type) {
     case REQUEST_CATS_PENDING:
       return { ...state, isPending: true };

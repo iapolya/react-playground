@@ -1,7 +1,8 @@
 import React from 'react';
 import Card from './Card';
+import { ICat } from '../types';
 
-const CardList = ({ cats }) => {
+const CardList = ({ cats }: { cats: Array<ICat> }) => {
   return (
     <section>
       {cats.map((cat, i) => {
